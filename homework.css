@@ -1,0 +1,235 @@
+:root {
+	--blue_background: #F0F8FF;
+	--blue_lightSteel: #B0C4DE;
+	--blue_steel: #4682B4;
+	--white: #ffffff;
+	--black: #000000;
+	--grey_dim: #696969;
+}
+
+/* Global style rules for the body */
+body {
+	font-family: Arial, sans-serif;
+	background-color: var(--blue_background);
+	line-height: 3;
+	font-size: 25px;
+}
+ul {
+	line-height: 2;
+	font-size: 20px;
+	list-style-type: square;
+}
+pre {
+	white-space: pre-wrap; /* Fixed sizing issues for the the code snippet container (.notebox class)*/
+}
+
+/* ID selectors */
+#page {
+	margin: 45px 50px 0px 0px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-family: "Lucida Handwriting", cursive;
+	font-variant: small-caps;
+}
+#pageSmall {
+	text-align: center;
+	font-family: "Lucida Handwriting", cursive;
+	font-variant: small-caps;
+	margin-top: 0px;
+}
+#title {
+	margin: 25px 50px 50px;
+	font-family: "Monaco", monospace;
+	text-align: center;
+	font-size: 40px;
+}
+
+/* Navigation bar style */
+.nav { 
+	background-color: var(--black);
+	list-style-type: none;
+	text-align: center;
+	margin: 0px 20px 0px 320px;
+	padding: 0;
+}
+.nav li {
+	display: inline-block; /* Horizontal navigation bar */
+
+}
+.nav a {
+	text-decoration: none; /* Removces underline for hyperlink */
+	font-size: 17px;
+	padding: 2px;
+	color: var(--blue_steel);
+
+}
+.nav a:visited { 
+	color: var(--blue_lightSteel); 
+	outline-color: white;
+}
+
+.nav a:hover {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+.nav a:active {
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+/* The sidebar menu */
+.sidebar {
+	background-color: var(--white);
+	border: solid;
+	border-width:thin;
+	border-right: none;
+	border-color: lightgrey;
+	box-shadow: 2px 1px 2px 1px gray, 1px 1px 2px 0px gray inset;
+	height: 100%; 
+	width: 300px; /* Formated to left-margin in bodyContainer */
+	position: fixed; 
+	z-index: 1; 
+}
+.sidebar ul {
+	list-style-type: none;
+	margin: 2px 2px 2px 0px;
+
+}
+.sidebar ol {
+	list-style-type: none;
+	margin: 2px 2px 2px 0px;
+	font-size: 20px;
+
+}
+.sidebar a {
+	text-decoration: none;
+	font-size: 17px;
+	color: #000000;
+	display: block;
+}
+
+/* Container class that looks like paper */
+.bodycontainer {
+	background-color: #FFFFFF;
+	margin: 125px 30px 20px 320px;
+	padding: 10px 70px 10px 60px;
+	box-shadow: 3px 3px 6px 1px gray, 3px 3px 5px 0px gray inset;
+}
+
+/* Container class for side notes */
+.notebox{
+	background-color: var(--blue_background);
+	border-style: double;
+	width: auto;
+	font-family: "Courier New", monospace;
+	font-size: 20px;
+	line-height: 1.5;
+	margin: 10px 0px;
+	padding: 5px 15px;
+}
+
+
+/* Container class for code segments */
+.code {
+	width: auto;
+	background-color: #000000;
+	color: #ffffff;
+	font-family: "Courier New", monospace;
+	font-size: 20px;
+	line-height: 2;
+	padding: 5px 15px;
+	box-shadow: 2px 1px 2px 1px gray, 1px 1px 2px 0px gray inset;
+}
+
+/* Format hyperlinks to black in headers/body */
+.hyperlink {
+	margin: 30px 5px 0px 5px;
+	color: black;
+}
+
+.hyperlink a:visited {
+	color: var(--black);
+}
+
+/* Classes to format pictures in Homework5 */
+.hw5_picture1 {
+	font-size: 15px;
+	font-style: italic;
+	float: left;
+	text-align: center;
+}
+.hw5_picture1 img {
+	max-width: 200px;
+	max-height: 200px;
+	box-shadow: 2px 1px 2px 1px gray, 1px 1px 2px 0px gray inset;
+	border-radius: 8px;
+}
+
+.hw5_picture2 {
+	font-size: 15px;
+	font-style: italic;
+	float: right;
+	text-align: right;
+}
+.hw5_picture2 img {
+	max-width: 200px;
+	max-height: 200px;
+	border-radius: 50%;
+	box-shadow: 2px 1px 2px 1px gray, 1px 1px 2px 0px gray inset;
+}
+
+/*Classes for footer*/
+.foot_container {
+	background-color: var(--white);
+	border: solid;
+	border-width:thin;
+	border-right: none;
+	border-color: lightgrey;
+	box-shadow: 2px 1px 2px 1px gray, 1px 1px 2px 0px gray inset;
+	margin: 10px 30px 0px 320px;
+	padding: 0px 20px;
+	font-size: 17px;
+}
+
+.foot_container p {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Classes for formating images inside a table for Homework6 */
+.table_container {
+	overflow: auto; /*Allow table to be scroll-able when browser resizes*/
+	justify-content: center;
+	border: thin;
+	padding: 5px;
+}
+
+.table_container td {
+	border: thin solid;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 17px;
+	padding: 5px;
+}
+
+.table_container tr:nth-of-type(even){
+	background-color: var(--blue_background);
+}
+
+.table_container thead {
+	background-color: var(--black);
+	color: var(--blue_steel);
+}
+
+.table_container img {
+	max-width: 80px;
+	max-height: 80px;
+}
+
+/*Allows you to click and make the image larger*/
+.table_container a[target="_blank"] img {
+	width: auto;
+	height: auto;
+}
