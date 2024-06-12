@@ -23,6 +23,15 @@ pre {
 	white-space: pre-wrap; /* Fixed sizing issues for the the code snippet container (.notebox class)*/
 }
 
+h5 {
+margin-bottom: 1px;
+}
+
+iframe {
+padding: 0;
+margin: 0;
+}
+
 /* ID selectors */
 #page {
 	margin: 45px 50px 0px 0px;
@@ -228,8 +237,28 @@ pre {
 	max-height: 80px;
 }
 
-/*Allows you to click and make the image larger*/
-.table_container a[target="_blank"] img {
-	width: auto;
-	height: auto;
+/* Unit 4 CSS */
+.hw7_image_map {
+	text-align: center;
+}
+.hw7_image_map img {
+	height: 548px;
+	width: 954px;
+}
+#youtube_iframe {
+ width: 560px; 
+ height: 315px;
+}
+#privateGPT_iframe {
+	width: 100%;
+	height: 1000px; /* Adjust the height based on your content above */
+	border: thin solid; /* Remove iframe border if needed */
+	padding: 7px;
+	margin: 0;
+}
+#cite {
+	width: 560px;
+	font-size: 14px;
+	margin: 0px;
+	line-height: 16px;
 }
