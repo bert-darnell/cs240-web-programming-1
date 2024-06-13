@@ -279,6 +279,19 @@ iframe {
     border: thin solid;
     padding: 8px; 
 		text-align: center;
+		line-height: 30px;
 }
-/* Changes color of every other row of the form table */ 
 .formTable tr:nth-of-type(even) { background-color: var(--blue_background) }
+
+/* Week 7 */
+/* Table is formated the same as all of Week6 CSS */
+/***************************************************************************/
+
+.darkContainer {
+    background-color: var(--black); 
+    color: var(--blue_steel); 
+    padding: 20px 30px; 
+    text-align: center; /* Center the text inside the container */
+    margin: 0 auto; /* Center the container horizontally */
+		width: 500px;
+}
