@@ -259,3 +259,26 @@ iframe {
 	font-size: 25px;
 	margin-left: 0px;
 }
+
+/* Week 6 */
+.table {display: table;}
+.row {display: table-row;}
+.row > * {display: table-cell;}
+.row > :first-child { 
+	text-align: right;
+	padding-right: 10px;
+}
+.formTable {
+    overflow: auto; /* Add scroll when the browser resizes */
+    justify-content: center;
+}
+.formTable table { width: 100%; } /* Sizes to 'bodycontainer'*/
+
+.formTable th,
+.formTable td {
+    border: thin solid;
+    padding: 8px; 
+		text-align: center;
+}
+/* Changes color of every other row of the form table */ 
+.formTable tr:nth-of-type(even) { background-color: var(--blue_background) }
